@@ -70,7 +70,7 @@ public class Input {
 
                 this.data.put(indexForKey++, inter);
                 countForTemp = 0;
-                //verifyTheImage(indexForKey, inter);
+                verifyTheImage(indexForKey, inter);
                 temp = new int[input.length][300];
             }
         }

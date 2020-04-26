@@ -73,7 +73,8 @@ public class GenerateHandwriting {
             e.printStackTrace();
         }
         int[][] out = new int[3840][2160];
-        for(int i=0;i<bufferedImage.getHeight();i++){
+        assert bufferedImage != null;
+        for(int i = 0; i<bufferedImage.getHeight(); i++){
             for(int j=0;j<bufferedImage.getWidth();j++){
                 out[i][j] = bufferedImage.getRGB(j,i);
             }
